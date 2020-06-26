@@ -1,5 +1,13 @@
-site_name: Vbox
+site_name: Vbox 1.8.0
 
 theme: readthedocs
 
 site_author: Sebastian Baum
+
+nav:
+    - Introduction: index.md
+    - Prerequisites: prerequisites.md
+    # - Configuration: configuration.md
+
+markdown_extensions:
+  - admonition
