@@ -5,9 +5,11 @@ theme: readthedocs
 site_author: Sebastian Baum
 
 nav:
-    - Introduction: index.md
-    - Prerequisites: prerequisites.md
-    - Configuration: configuration.md
+  - Introduction: index.md
+  - Prerequisites: prerequisites.md
+  - Quickstart: quickstart.md
+  - Configuration: configuration.md
+  - Docker: docker.md
 
 markdown_extensions:
   - admonition
