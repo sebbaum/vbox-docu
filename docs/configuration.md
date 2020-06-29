@@ -101,6 +101,7 @@ An alternative web server name. This is independent from Nginx or Apache.
 * `USE_SSL: false`  
 Should the setup process create a self-signed certificate that is used with Nginx
 or Apache.
+
 * `OPEN_BROWSER: true`  
 Open your default browser after a `vagrant up` if Nginx or Apache is used.
 
@@ -188,6 +189,8 @@ your vbox.
 *(opional; default: true)*
 * **env** - Key value pairs for environment variables. These are passed to your
 provisioning scripts and be used there.
+
+
 
 ## PHP
 In Vbox it is possible to use different PHP versions and modules. You can

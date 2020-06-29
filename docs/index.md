@@ -34,5 +34,5 @@ features come out-of-the-box and are ready to use if you need them.
     * Memcached
 * Docker
 
-!!! note "Prerequisits"
+!!! note "Prerequisites"
     Before you can start make sure to check the required [prerequisites](prerequisites.md).

@@ -9,6 +9,7 @@ nav:
   - Prerequisites: prerequisites.md
   - Quickstart: quickstart.md
   - Configuration: configuration.md
+  - Frameworks: frameworks.md
   - Docker: docker.md
 
 markdown_extensions:
