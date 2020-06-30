@@ -13,7 +13,7 @@ Alternatively, you can clone the repo directly using Git:
 git clone git@github.com:ion2s-gmbh/vbox.git
 ```
 
-# Create the config file.
+# Create the config file
 Make a copy of the sample config file and use it as the starting ground for your
 box's setup.
 
