@@ -12,6 +12,7 @@ nav:
   - Frameworks: frameworks.md
   - Docker: docker.md
   - Memcached: memcached.md
+  - Redis: redis.md
 
 markdown_extensions:
   - admonition
