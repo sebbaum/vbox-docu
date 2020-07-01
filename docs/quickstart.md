@@ -1,11 +1,11 @@
 # Get vbox
 First of all download and unpack the latest release from Github:
-[Download](https://github.com/ion2s-gmbh/vbox/releases/tag/v1.8.0)
+[Download](https://github.com/ion2s-gmbh/vbox/releases/tag/v1.8.1)
 
 ```bash
-unzip vbox-1.8.0.zip
+unzip vbox-1.8.1.zip
 # OR
-tar xvfz vbox-1.8.0.tar.gz
+tar xvfz vbox-1.8.1.tar.gz
 ```
 
 Alternatively, you can clone the repo directly using Git:

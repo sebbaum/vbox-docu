@@ -53,7 +53,7 @@ placed, too. This is useful for developing the vbox itself.
     You can see which configuration Vagrant uses by running any vagrant command.
 
         vagrant status
-        Used box configuration: /tmp/vbox-1.8.0/box.yml
+        Used box configuration: /tmp/vbox-1.8.1/box.yml
 
 # Basic box settings
 Possible settings:
