@@ -1,5 +1,6 @@
-# Main config file
+[TOC]
 
+# Main config file
 The main configuration file that determines the setup of your vbox is
 `vbox.yml`.
 You can find a default config file in `configure/box.sample.yml` that can serve
