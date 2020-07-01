@@ -1,8 +1,10 @@
-site_name: Vbox - v1.8.0
+site_name: Vbox
 
 theme: readthedocs
 
 site_author: Sebastian Baum
+
+repo_url: https://github.com/sebbaum/vbox-docu
 
 nav:
   - Introduction: index.md
