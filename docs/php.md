@@ -54,3 +54,16 @@ You can enable your favorite IDE to use Xdebug.
 
 ## Additional modules
 Even if you do not use Redis or Memcached, appropriate modules for PHP are installed for you.
+
+## Ioncube
+> Using ionCube encoded and secured PHP files requires a file called the ionCube Loader to be installed on the web server and made available to PHP.
+
+You can enable installation of [ionCube loader](https://www.ioncube.com/loaders.php) for your PHP version by setting:
+
+```yml
+php:
+  current: 7.2
+  versions:
+    - 7.2
+  ioncube: true
+```
