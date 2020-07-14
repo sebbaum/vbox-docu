@@ -11,7 +11,9 @@ nav:
   - Prerequisites: prerequisites.md
   - Quickstart: quickstart.md
   - Configuration: configuration.md
+  - Webservers: webservers.md
   - PHP: php.md
+  - Node: node.md
   - Frameworks: frameworks.md
   - Docker: docker.md
   - Mysql: mysql.md
