@@ -20,6 +20,7 @@ placed, too. This is useful for developing the vbox itself.
 ```bash
 .
 ├── box.yml               # <-- 2. precedence
+├── ca-certificates
 ├── configure
 │   ├── box.sample.yml
 │   └── box.yml           # <-- 3. precedence
@@ -105,6 +106,19 @@ or Apache.
 
 * `OPEN_BROWSER: true`  
 Open your default browser after a `vagrant up` if Nginx or Apache is used.
+
+## Additional CA certificates
+If you want to trust additional CA certificates e.g. that belong to your company,
+you can configure a path to a folder where the CA certificates are located.
+```yml
+extra_certificates: ./ca-certificates
+```
+All containing certificates are copied to the box and trusted by running:
+```bash
+rm -rf /usr/local/share/ca-certificates/extra
+mv /home/vagrant/extra /usr/local/share/ca-certificates
+update-ca-certificates
+```
 
 ## Shared folders
 You can define shared folders between your host and your guest system (vbox).
