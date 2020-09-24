@@ -1,11 +1,18 @@
 # Get vbox
-First of all download and unpack the latest release from Github:
-[Download](https://github.com/ion2s-gmbh/vbox/releases/tag/v1.8.1)
+Basically, there are four ways of using the Vbox in your own webproject:
+1. Download and extract the Vbox code. No Github account in needed.
+1. Use the Template-Repo.
+1. Clone the Vbox repo and start with a fresh `git init`.
+1. Use the Vbox as a git submodule.
+
+For simplicity we use the first option here.
+So start by downloading and unpacking the latest release from Github:
+[Download](https://github.com/ion2s-gmbh/vbox/releases)
 
 ```bash
-unzip vbox-1.8.1.zip
+unzip vbox-1.11.1.zip
 # OR
-tar xvfz vbox-1.8.1.tar.gz
+tar xvfz vbox-1.11.1.tar.gz
 ```
 
 Alternatively, you can clone the repo directly using Git:
