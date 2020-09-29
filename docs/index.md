@@ -32,6 +32,7 @@ features come out-of-the-box and are ready to use if you need them.
     * Mysql
     * Redis
     * Memcached
+* MailHog
 * Docker
 
 !!! note "Prerequisites"

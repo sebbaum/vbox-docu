@@ -15,10 +15,11 @@ nav:
   - PHP: php.md
   - Node: node.md
   - Frameworks: frameworks.md
-  - Docker: docker.md
   - Mysql: mysql.md
-  - Memcached: memcached.md
   - Redis: redis.md
+  - Memcached: memcached.md
+  - MailHog: mailhog.md
+  - Docker: docker.md
 
 markdown_extensions:
   - admonition
