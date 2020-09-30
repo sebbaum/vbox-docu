@@ -26,3 +26,15 @@ is served by your web app.
 mail('you@awesome-app.com', 'Testing mail', 'It works!');
 ```
 After executing this code, you should see a new mail in MailHog's web GUI.
+
+## SMTP configuration
+If you want to use MailHog in e.g. a Laravel application you can use the following
+configuration in your `.env` file:
+```
+MAIL_MAILER=smtp
+MAIL_HOST=localhost
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+```
