@@ -46,7 +46,6 @@ placed, too. This is useful for developing the vbox itself.
 │   └── welcome.sh
 ├── README.md
 ├── src
-│   ├── application
 │   └── index.php
 └── Vagrantfile
 ```
