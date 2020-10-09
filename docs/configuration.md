@@ -33,6 +33,7 @@ placed, too. This is useful for developing the vbox itself.
 │   ├── docker.sh
 │   ├── frameworks.sh
 │   ├── loadNvm.sh
+│   ├── mailhog.sh
 │   ├── memcached.sh
 │   ├── mysql.sh
 │   ├── nginx.sh
@@ -63,15 +64,15 @@ Possible settings:
 The base box of your vagrant environment. You
 can find other base boxes [here](https://app.vagrantup.com/boxes/search).
 
-* `BOX_NAME: "yourbox"`  
-Give your box a name. This name is shown in the
-console, if you login via SSH and in the Virtualbox GUI.
-
 * `BOX_VERSION: "20190726.0.0"`  
 Specifies the version of the base box. By using a fixed version you can ensure
 that everyone in your team uses the same box.
 
-* `BOX_IP: "10.0.0.42"`  
+* `BOX_NAME: "yourbox"`  
+Give your box a name. This name is shown in the
+console, if you login via SSH and in the Virtualbox GUI.
+
+* `BOX_IP: "10.0.0.101"`  
 This is the private IP of your box. You can e.g. point your browser to this IP
 to show your application.
 
@@ -86,8 +87,7 @@ Should the box check for updates on each start? Defaults to false.
 
 * Plugins  
 Additional vagrant-plugins that should be used with your vagrant box.  
-
-```yml
+```yaml
 PLUGINS:
   - vagrant-vbguest
 ```
@@ -119,6 +119,19 @@ rm -rf /usr/local/share/ca-certificates/extra
 mv /home/vagrant/extra /usr/local/share/ca-certificates
 update-ca-certificates
 ```
+
+## Port forwarding
+If required you can define additional ports that should be forwarded form the host
+to the quest system.
+```yaml
+ports:
+  - localhost: 8080
+    box: 80
+  - localhost: 8088
+    box: 8080
+```
+For example, this will forward requests to http://localhost:8080 to a server inside your box
+that listens on port 80.
 
 ## Shared folders
 You can define shared folders between your host and your guest system (vbox).
