@@ -17,7 +17,7 @@ tar xvfz vbox-1.14.0.tar.gz
 
 Alternatively, you can clone the repo directly using Git:
 ```bash
-git clone git@github.com:ion2s-gmbh/vbox.git
+git clone https://github.com/ion2s-gmbh/vbox.git
 ```
 
 # Create the config file
@@ -37,4 +37,4 @@ Finally, all you have to do is running `vagrant up` and grep yourself a cup of
 tea or coffee.
 
 Once the provisioning is finished, your preferred browser should open
-[http://10.0.0.42](http://10.0.0.42) and show the php info page.
+[http://10.0.0.101](http://10.0.0.101) and show the php info page.
