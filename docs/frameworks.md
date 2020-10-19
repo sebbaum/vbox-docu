@@ -5,6 +5,7 @@ If activated the following framework installers will be available:
 * [Lumen](https://lumen.laravel.com/)
 * [Yii](https://www.yiiframework.com/)
 * [Symfony](https://symfony.com/)
+* [Laminas](https://getlaminas.org/) // formerly known as Zend Framework
 
 You can install the frameworks e.g. in the mapped `src` folder by running:
 
@@ -17,13 +18,17 @@ laravel new <project-name>
 
 $ lumen new <project-name>
 
-#OR
+# OR
 
 $ yii-create <project-name>
 
 # OR
 
 $ symfony new <project-name> [--full]
+
+# OR
+
+$ laminas-create <project-name>
 ```
 
 !!! note
