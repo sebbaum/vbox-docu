@@ -16,13 +16,36 @@ project and your source code is located inside of `/src`.
 1. Inside the `configuration` folder of vbox where the `box.example.yml` is
 placed, too. This is useful for developing the vbox itself.
 
-## File structure
+# Override of the main config file
+The main config file is intended to be shared among the whole development team. Thus all developers in the team have the same infrastructure. However, in some cases a developer might want to change certain configurations without affecting team mates. For this purpose it is possible to override config values by creating a box.override.yml file. This file has the same structure as the main
+box.yml file. In this file you only place configuration that should be overridden.
+
+For example you can override the `BOX_NAME` and `BOX_IP` like so:
+```yaml
+BOX_NAME: "my-name"
+BOX_IP: "10.0.0.222"
+```
+Like the main config file, you can place the `box.override.yml` file in the same three places. The same rules for precedence take effect.
+
+!!! important "Info"
+    Be careful not to commit the `box.override.yml` file to your source control system.
+
+# File structure examples
+```bash
+.
+├── box.yml               # <-- 1. precedence
+├── box.override.yml      # <-- 1. precedence
+└── vbox
+```
+
 ```bash
 .
 ├── box.yml               # <-- 2. precedence
+├── box.override.yml      # <-- 2. precedence
 ├── ca-certificates
 ├── configure
 │   ├── box.sample.yml
+│   ├── box.override.yml  # <-- 3. precedence
 │   └── box.yml           # <-- 3. precedence
 ├── provisioning
 │   ├── apache.sh
@@ -54,7 +77,7 @@ placed, too. This is useful for developing the vbox itself.
     You can see which configuration Vagrant uses by running any vagrant command.
 
         vagrant status
-        Used box configuration: /tmp/vbox-1.8.1/box.yml
+        Used box configuration: /tmp/vbox-1.16.1/box.yml
 
 # Basic box settings
 Possible settings:
