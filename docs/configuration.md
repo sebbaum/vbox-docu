@@ -77,7 +77,7 @@ Like the main config file, you can place the `box.override.yml` file in the same
     You can see which configuration Vagrant uses by running any vagrant command.
 
         vagrant status
-        Used box configuration: /tmp/vbox-1.16.3/box.yml
+        Used box configuration: /tmp/vbox-1.17.0/box.yml
 
 # Basic box settings
 Possible settings:

@@ -9,11 +9,23 @@ provision:
 ```
 
 This will install the latest MySQL server in your vagrant box.
-The root user and an extry user can be configured in box.yml as well.
+The root user and an extra user can be configured in box.yml as well.
+
+Since version 1.17.0 it is also possible to configure the database's charset and collation.  
+E.g.:
+```
+charset: latin1
+collation: latin1_swedish_ci
+
+charset: utf8  
+collation: utf8_general_ci
+```
 
 ```yml
 mysql:
   MYSQL_DATABASE: mydb
+  MYSQL_DATABASE_CHARSET: latin1
+  MYSQL_DATABASE_COLLATION: latin1_swedish_ci
   MYSQL_ROOT_PASSWORD: root!
   MYSQL_USER_NAME: app
   MYSQL_USER_PASSWORD: app!

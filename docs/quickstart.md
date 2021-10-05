@@ -10,11 +10,11 @@ So start by downloading and unpacking the latest release from Github:
 [Download](https://github.com/ion2s-gmbh/vbox/releases)
 
 ```bash
-unzip vbox-1.16.3.zip
+unzip vbox-1.17.0.zip
 
 # OR
 
-tar xvfz vbox-1.16.3.tar.gz
+tar xvfz vbox-1.17.0.tar.gz
 ```
 
 Alternatively, you can clone the repo directly using Git:
